@@ -1,3 +1,142 @@
+body {
+    background-color: #d9d9d9;
+}
+
 h1 {
     color: red;
+}
+
+.row {
+    border-bottom: 1px solid #D4D4D4;
+    height: auto
+    margin: 0px;
+}
+
+.row-element {
+    margin:0;
+    padding: 0;
+}
+
+.row-element-left {
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.row-element-center {
+    margin-left: 35%;
+    vertical-align:middle ;
+}
+
+.row-element-right {
+    margin-top:5px;
+    float: right;
+    vertical-align:middle ;
+}
+
+#add-menu {
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+#add-menu > * {
+    vertical-align: top;
+    border: 0;
+    margin: 0;
+    padding: 6.5px 10px;
+}
+
+#add-menu > input[type=text] {
+    margin: 0;
+    outline: 0;
+    border: 1px solid #D4D4D4;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 78%;
+    box-sizing: inherit;
+    height: 22px;
+}
+
+#add-menu > button {
+    font-family: impact;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+    box-sizing: inherit;
+    background: #0080ff;
+    width: 15%;
+    height: 55%;
+    margin-left: -0.5%;
+    box-shadow: 0 5px #0052cc;
+}
+
+#add-menu > button:hover {
+    background-color: #0073e6;
+}
+
+.remove-button{
+    border: none;
+    border-radius: 100%;
+    background-color: red;
+    width:25px;
+    height:25px;
+}
+
+.add-button{
+    border: none;
+    border-radius: 100%;
+    background-color: #2eb82e;
+    width:25px;
+    height:25px;
+}
+
+.delete-button{
+    border: none;
+    border-radius: 30%;
+    background-color: red;
+    width:30px;
+    height:30px;
+    padding-bottom:3px;
+}
+
+.bought-button{
+    border-radius: 5px;
+    height:30px;
+}
+
+.quantity-button{
+    border: none;
+    border-radius: 25px;
+    width:25px;
+    height:25px;
+    background-color: #e97b15;
+}
+
+.check-element{
+    height:auto;
+    padding:10px;
+}
+
+.menu-block {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display: inline-block;
+    max-width: 92%;
+}
+
+.block-left {
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 700px;
+}
+
+.block-right {
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 50px;
+    width: 300px;
 }

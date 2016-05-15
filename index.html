@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
+
 <body>
-<h1>Hello World</h1>
+    <div class="menu-block block-left">
+        <div class="row" id="add-menu">
+            <input type="text" id="add-input" class="row-element" placeholder="Назва товару">
+            <button id="add-confirm" class="row-element">Додати</button>
+        </div>
+        <div class="row">
+            <span class="row-element row-element-left">Томати</span>
+            <span class="row-element row-element-center">
+                <button class="remove-button">-</button>
+                <span>1</span>
+            <button class="add-button">+</button>
+            </span>
+            <span class="row-element row-element-right">
+                <button class="bought-button">Куплено</button>
+                <button class="delete-button">&#10006</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="menu-block block-right">
+        <h3 class="row">Залишилося</h3>
+        <div class="row">
+            <span class="check-element">
+                <span>Помідори</span>
+                <button class="quantity-button">1</button>
+            </span>
+            <span class="check-element">
+                <span>Картопля</span>
+                <button class="quantity-button">1</button>
+            </span>
+        </div>
+        <h3 class="row">Куплено</h3>
+        <div class="row">
+        </div>
+    </div>
 </body>
+
 </html>
