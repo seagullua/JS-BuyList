@@ -154,3 +154,9 @@ box-shadow: 2px 2px 5px rgb(187, 187, 187);
 .search-button:hover {
 	background-color: rgb(45, 130, 195);
 }
+
+.bar-container{
+	height: 47px;
+	width: 764px;
+	margin: -14px;
+}
