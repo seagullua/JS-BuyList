@@ -1,8 +1,8 @@
 .ui{
-    font-family: Century;
+    font-family: Calibri;
 }
 .main-box{
-    max-width: 700px;
+    max-width: 1100px;
     margin: auto;
     padding-top: 100px;
 }
@@ -19,10 +19,6 @@
 .white-block{
     background: #fff;
     border-radius: 5px;
-    padding: 10px;
-}
-.items{
-
 }
 
 .items.white-block{
@@ -32,10 +28,6 @@
 .left-column{
     float:	left;
     width: 60%;
-}
-
-.chosen{
-
 }
 
 .chosen.white-block{
@@ -49,5 +41,144 @@ body{
 }
 
 .part{
+    border: 1px;
+    padding: 5px;
+    max-width: 100%;
+}
 
+.item{
+    display:flex;
+    border-top: 1px solid lightgray;
+}
+
+.form{
+    max-width: 100%;
+}
+
+.input{
+    padding: 0px;
+    display: flex;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-width: 3px;
+    border: solid;
+    border-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.add-button{
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: dodgerblue;
+    box-shadow: 0 -5px 0 0 rgba(0, 62, 165, 0.51) inset;
+}
+
+.column{
+    margin: 10px;
+    display: inline-block;
+}
+
+.first{
+    width: 33%;
+}
+
+.second{
+    margin: 0px;
+    margin-top: 5px;
+    width: 33%;
+}
+.third{
+    width: 33%;
+}
+
+.buttons-number-panel{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80px;
+}
+
+.buttons-buy-panel{
+    text-align: right;
+}
+
+button.buy{
+    height: 30px;
+    width: 80px;
+    border-width: 0;
+    border-radius: 5px;
+    margin: 1px;
+    vertical-align: middle;
+    background: linear-gradient(0deg, #e1e1e1, #f5f5f5) #ffffff;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.31) inset;
+}
+
+button.delete{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-width: 0;
+    border-radius: 3px;
+    margin: 1px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-size: 12pt;
+    box-shadow: 0 -3px 0 0 rgba(165, 0, 44, 0.51) inset;
+}
+
+button.minus{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    border-width: 0;
+    border-radius: 10em;
+    box-shadow: 0 -3px 0 0 rgba(165, 0, 44, 0.51) inset;
+    margin: 1px;
+}
+
+button.plus{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    font-weight: bolder;
+    color: white;
+    background-color: limegreen;
+    border-width: 0;
+    border-radius: 10em;
+    box-shadow: 0 -3px 0 0 rgba(0, 147, 13, 0.77) inset;
+    margin: 1px;
+}
+
+.number-label{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+.heading{
+    padding: 5%;
+    font-weight: bold;
+    font-size: 20pt;
 }
