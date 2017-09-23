@@ -1,4 +1,5 @@
 body {
+    background-color: #dadada;
 }
 
 .container {
@@ -6,113 +7,203 @@ body {
     padding-top: 100px;
 }
 
-.center {
-    background-color: #dadada;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1100px;
+.list, .info {
+    width: 55%;
     height: 200px;
+    float: left;
+    background-color: red;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px 0px darkgray;
+    border-radius: 4px;
+}
+
+.list {
+    margin-left: 8%;
+    margin-right: 3%;
 }
 
 .info {
+    width: 26%;
     background-color: blue;
-    float: right;
-    width: 300px;
-    padding: 20px;
-    height: 150px;
-    margin: 0 auto;
+    margin-right: 4%;
+    height: 180px;
 }
 
-.buylist {
-    background-color: red;
-    padding: 20px;
+.inputitem, .item, .lastitem, .remains, .bought {
+    background-color: #ffffff;
     width: 100%;
-    height: 185px;
-    max-width: 700px;
-    margin: 0 auto;
-    float: left;
-    display: inline-block;
-    box-shadow: 0px 0px 7px 0px darkgray;
-    border-radius: 2px;
+    height: 30%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .inputitem {
-    background-color: white;
-    padding: 15px;
-    height: 30px;
-    margin: -20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     position: relative;
+}
+
+.item, .lastitem {
+    height: 22.7%;
+}
+
+.lastitem {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.inputitem, .remains {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.remains, .bought {
+    height: 30%;
+}
+
+.info > .lastitem {
+    height: 15%;
+}
+
+.inputbutton {
+    background-color: #ffffff;
+    width: 97%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: inline-flex;
 }
 
 input {
-    width: 85%;
-    height: 25px;
-    margin: auto;
-    max-width: 570px;
-    opacity: 0.5;
-    border-radius: 1px;
-    position: absolute;
-    left: 14px;
-}
-
-.but {
-    background-color: #2185d0;
-    float: right;
-    width: 15%;
-    height: 31px;
-    max-width: 550px;
-    text-align: center;
-    font-size: 22px;
-    color: white;
-    border-radius: 2px;
-    position: absolute;
-    right: 5.5%;
-    z-index: 2;
-}
-
-.item {
-    background-color: white;
-    padding: 10px;
-    height: 20px;
-    margin: -20px;
-    margin-top: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.name {
     width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.input {
+    width: 85%;
+    height: 89%;
+    float: left;
+}
+
+.sumbit {
+    position: relative;
+    background-color: #2185d0;
+    text-align: center;
+    width: 108px;
+    height: 91.5%;
+    margin-left: 1px;
+    float: right;
+    box-shadow: 0 3px 0 0 rgb(30, 120, 187);
+    z-index: 2;
+    border-radius: 2px;
+}
+
+.text {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 8%;
+}
+
+.forremains, .forbought {
+    background-color: #ffffff;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.forbought > h3 {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.name, .counts {
+    background-color: #ffffff;
+    width: 30%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.counts {
+    background-color: yellow;
+    width: 150px;
+    height: 100%;
+    display: inline-flex;
+}
+
+.boughtorno {
+    background-color: red;
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.name > .text {
+    font-weight: normal;
     font-style: normal;
     font-family: Arial;
     opacity: 0.7;
-    position: absolute;
-    left: 15px;
+    color: black;
+    margin-left: 10%;
+    margin-top: 15px;
 }
 
-.aditional {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 15px;
-    width: 100%;
-    max-width: 250px;
-    margin: auto;
-
-}
-
-.minus {
-    border-radius: 100%;
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 15%;
-    bottom: 15%;
+.minus, .number {
+    background-color: #ffffff;
+    float: left;
+    width: 70px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .number {
+    background-color: #ffffff;
+    width: 70px;
+    height: 100%;
+}
 
+.plus {
+    background-color: #ffffff;
+    float: right;
+    width: 70px;
+    height: 100%;
+}
+
+.oval {
+    background-color: rgb(239, 158, 158);
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    float: right;
+    margin-top: 9px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.plus > .oval {
+    background-color: rgb(33, 186, 69);
+    float: left;
+    box-shadow: 0 3px 0 0 rbg(33, 163, 65) ;
+}
+
+.num {
+    background-color: rgb(232, 232, 232);
+    width: 60%;
+    height: 60%;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 9px;
 }
