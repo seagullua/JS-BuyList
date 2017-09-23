@@ -1,3 +1,23 @@
-h1 {
-    color: red;
+.block1{
+    width:765px;
+    height:210px;
+    background-color:white;
+    margin-top:99px;
+    margin-left:119px;
+    border-radius: 5px;
+    
 }
+.block2{
+    width:331px;
+    height:192px;
+    background-color:white;
+    margin-left:793px;
+    margin-bottom: 199px;
+    border-radius: 5px;
+}   
+
+
+    
+   
+ 
+
