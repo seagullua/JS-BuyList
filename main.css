@@ -102,12 +102,11 @@ input{
 }
 
 .first{
+    vertical-align: middle;
     width: 33%;
 }
 
 .second{
-    margin: 0px;
-    margin-top: 5px;
     width: 33%;
 }
 .third{
