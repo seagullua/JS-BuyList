@@ -144,7 +144,7 @@ h3 {
 
 .counts {
     width: 150px;
-    height: 100%;
+    height: 98%;
     margin-left: 11%;
     display: inline-flex;
 }
@@ -223,7 +223,7 @@ h3 {
 .plus > .oval > .text {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .num > .text {
@@ -255,7 +255,7 @@ h3 {
     margin-left: -10px;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 0 0 darkgray;
+    box-shadow: 0 1px 0 0 darkgray;
 }
 
 .butdelete {
@@ -267,7 +267,7 @@ h3 {
     margin-left: 6px;
     margin-right: 10px;
     text-align: center;
-    box-shadow: 0 2px 0 0 rgb(209, 40, 40);
+    box-shadow: 0 3px 0 0 rgb(199, 40, 40);
 }
 
 .butbought > .text {
@@ -281,4 +281,64 @@ h3 {
     font-family: Arial;
     margin-top: 10px;
     font-size: 10px;
+}
+
+.remitems {
+    width: 90%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.itemwithcounts {
+    background-color: rgb(232, 232, 232);
+    width: 80px;
+    height: 60%;
+    margin-top: 8px;
+    border-radius: 8%;
+    display: inline-flex;
+}
+
+.itemwithcounts > .text {
+    color: rgb(70, 70, 70);
+    font-weight: 100;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.itemwithcounts > .oval {
+    width: 22%;
+    height: 70%;
+    margin-top: 4px;
+    margin-left: 2px;
+    background-color: rgb(232, 94, 15);
+}
+
+.itemwithcounts > .oval > .text {
+    font-size: 11px;
+    margin: auto;
+    margin-top: 2px;
+    font-weight: 100;
+    font-family: Calibri;
+}
+
+.itemwithcounts:last-child{
+    width: 50px;
+    height: 57%;
+    padding-top: 2px;
+}
+
+.itemwithcounts:nth-child(2) {
+    width: 65px;
+    height: 59%;
+    padding-top: 1px;
+}
+
+.itemwithcounts:nth-child(2) > .oval:nth-child(2) {
+    width: 26%;
+    margin-top: 3px;
+}
+
+.itemwithcounts:last-child > .oval:last-child {
+    width: 34%;
+    margin-top: 3px;
 }
