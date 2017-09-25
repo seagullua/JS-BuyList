@@ -1,16 +1,100 @@
-<!DOCTYPE html>
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
+    <title>JS-BuyList</title>
     
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
-<body bgcolor="#dadada">
-    <div class="block1">
-<div class="block2">
-    
+<body>
+    <div class="main-container">
+<div class="leftcolumn">
+    <div class="iform">
+        <input type="text" placeholder="Назва товару">
+        <button class="add">Додати</button>
+        </div>
+    <div class="raws">
+  <div class="itemrow" data-class="edit-mode">
+      <div class="innergrid">
+            <span class="columnname">
+                <span class="bought">Помідори</span>
+                </span>
+                <span class="addbuttons">
+                      <button class="minus-button"disabled>-</button>
+                     <span class="count-label">1</span>
+            <button class="plus-button">+</button>    
+                </span>
+                  <span class="lastbuttons">
+            <button class="buybutton">Куплено</button>
+            <button class="deletebutton"title="Видалити"></button>
+            </span>  
+            </div>
+    </div>
+    </div>
+    <div class="itemrow" data-class="edit-mode">
+      <div class="innergrid">
+            <span class="columnname">
+                <span class="bought">Печиво</span>
+                </span>
+                <span class="addbuttons">
+                      <button class="minus-button"disabled>-</button>
+                     <span class="count-label">1</span>
+            <button class="plus-button">+</button>    
+                </span>
+                  <span class="lastbuttons">
+            <button class="buybutton">Куплено</button>
+            <button class="deletebutton"title="Видалити"></button>
+            </span>  
+            </div>
+    </div>
+       <div class="itemrow" data-class="edit-mode">
+      <div class="innergrid">
+            <div class="columnname">
+                <span class="bought">Сир</span>
+                </div>
+                <div class="addbuttons">
+                      <button class="minus-button"disabled>-</button>
+                     <span class="count-label">1</span>
+            <button class="plus-button">+</button>    
+                </div>
+                  <div class="lastbuttons">
+            <button class="buybutton">Куплено</button>
+            <button class="deletebutton"title="Видалити"></button>
+            </div>  
+            </div>
+    </div>
         </div>
         </div>
+        
+        <div class="rightcolumn">
+        <div class="segments">
+            <div class="segment">
+            <h3>Залишилося</h3>
+            </div>
+            <div class="segment">
+            <div class="productsnotbought">
+                <span class="pr-label">
+                <span class="title">Помідори</span>
+                    <span class="mini-label-count">1</span>
+                </span>
+                <span class="pr-label">
+                <span class="title">Печиво</span>
+                <span class="mini-label-count">1</span>
+                </span>
+                <span class="pr-label">
+                <span class="title">Сир</span>
+                <span class="mini-label-count">1</span>
+                </span>
+                </div>
+            </div>
+            <div class="segment">
+            <h3>Куплено</h3>
+            </div>
+            <div class="segment">
+            <div class="stats-bought">
+                </div>
+            </div>
+            </div>
+        </div>
+
 </body>
 </html>

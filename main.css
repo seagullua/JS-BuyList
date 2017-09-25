@@ -1,23 +1,222 @@
-.block1{
-    width:765px;
-    height:210px;
-    background-color:white;
-    margin-top:99px;
-    margin-left:119px;
-    border-radius: 5px;
+body{
+    background-color: #dadada;
+}
+.main-container {
+    padding-top:100px;
+        width:100%;          
+}
+.leftcolumn,.rightcolumn{
+     width: 58%;
+    height:208px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 1%;
     
 }
-.block2{
-    width:331px;
-    height:192px;
-    background-color:white;
-    margin-left:793px;
-    margin-bottom: 199px;
-    border-radius: 5px;
-}   
-
-
+.leftcolumn{
+    margin-left: 8%;
     
-   
- 
 
+}
+
+.rightcolumn {
+    width: 26%;
+    margin-left:2%;
+    height:195px;
+    background-color:white;  
+    box-sizing:border-box;
+    display:block;
+    line-height: 18px;
+    vertical-align:top;
+}
+.segment{
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 1%;
+}
+.iform{
+    width:100%;
+    display:block;
+    float: left;
+}
+.innergrid{
+    width: 100%;
+    box-sizing:border-box;
+    color:rgba(0, 0, 0, 0.87);
+    display:inline-flex;
+    font-family:Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    height:47px;
+    line-height:19.999px;
+    margin-bottom:-14px;
+    margin-left:-14px;
+    margin-right:-14px;
+    margin-top:14px;
+    text-size-adjust:100%;
+
+}
+
+.addbuttons{
+    display: inline-flex;
+    width: 35%;
+    height: 35%;
+  
+
+}
+.minus-button{
+   opacity:0.6;
+    background-color: #DB2828;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-bottom:11.5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    margin-right:2.5px;
+    margin-left:200px;
+
+}
+.plus-button{
+    opacity:0.6;
+    background-color: #21BA45;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-bottom:11.5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    margin-right:2.5px;
+
+  
+}
+.count-label{
+    height:10px;
+    padding-bottom: 7px;
+    padding-top:7px;
+    padding-right:10px;
+    padding-left:10px;
+    margin-top: 3%;
+    background-color: #E8E8E8;;
+    border-radius:4px;
+    display:inline-block;
+    font-family:Lato;
+    font-size:12px;
+    text-align: center;
+    margin-right:1.71429px;
+    margin-left:1.71429px;
+  
+
+}
+input,.add{
+
+    width:85%;
+    height:36px;
+    float:left;
+    box-sizing: border-box;
+}
+.input{
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+   
+}
+
+.add{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    border-bottom-right-radius:5px;
+    border-top-right-radius: 5px;
+    color: white;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+    width:15%;
+    float: right;
+    background-color: #2185d0;
+}
+
+
+.columnname{
+    box-sizing: border-box;
+    width:121.578px;
+    height:47px;
+    padding:14px;
+    float: left
+    display: block;
+    font-size:14px;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    line-height: 20px;
+}
+.bought{
+    width:25%;
+}
+
+.count-label{
+padding-left:10px;
+padding-right:10px;
+padding-top:7px;
+text-align:center;
+}
+.buybutton{
+    width:75%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: .2em .2em .2em .2em;
+    background: linear-gradient(transparent,rgba(0,0,0,.05)) #CCE2FF;color: #FFF;
+    color: rgba(0,0,0,.6);
+    box-shadow: 0 0 0 1px rgba(34,36,38,.15) inset,0 -.3em 0 0 rgba(34,36,38,.15) inset;    border: none;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+   background-color:#CCE2FF;
+}
+}
+.segments{
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.pr-label{
+    width:80px;
+    height:28px;
+    font-size:12px;
+    line-height:9px;
+    margin-bottom:3px;
+    display: inline-block;
+    line-height: 2;
+    vertical-align: baseline;
+    border-radius: 4px;
+    text-align:center;
+    margin: 0 .14285714em;
+    background-color: #E8E8E8;
+    
+}
+
+.lastbuttons {
+
+    display:inline-flex;
+    width: 30%;
+    margin-left: 300px;
+    float:right; 
+}
+.buybutton{
+    background-color: #CCE2FF;
+
+}
+.deletebutton{
+   
+}
+.mini-label-count{
+    background-color: #F2711C;
+    border-color: #F2711C;
+    color: #FFF;
+}
+.h3{
+    font-size:17.92px;
+    font-weight: 700;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    line-height:23px;
+}
