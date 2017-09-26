@@ -24,7 +24,6 @@ body {
 
 .info {
     width: 26%;
-    background-color: blue;
     margin-right: 4%;
     height: 180px;
 }
@@ -95,7 +94,7 @@ input::-webkit-input-placeholder {
 
 .input {
     width: 85%;
-    height: 89%;
+    height: 87%;
     float: left;
 }
 
