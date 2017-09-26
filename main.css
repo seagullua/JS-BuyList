@@ -4,6 +4,7 @@ body {
 
 .container {
     width: 100%;
+    height: 360px;
     padding-top: 100px;
 }
 
@@ -44,21 +45,22 @@ body {
 }
 
 .lastitem {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .inputitem, .remains {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .remains, .bought {
     height: 30%;
+    padding-top: 2px;
 }
 
 .info > .lastitem {
-    height: 15%;
+    height: 14%;
 }
 
 .inputbutton {
@@ -82,11 +84,11 @@ input {
     border-right: none;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    padding-left: 12px;
 }
 
 input::-webkit-input-placeholder {
-    font-size: 16px;
-    padding: 8px;
+    font-size: 14px;
     opacity: 0.7;
     font-weight: 100;
 }
@@ -107,7 +109,8 @@ input::-webkit-input-placeholder {
     float: right;
     box-shadow: 0 3px 0 0 rgb(30, 120, 187);
     z-index: 2;
-    border-radius: 2px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .text {
@@ -137,7 +140,7 @@ h3 {
 .name, .counts {
     background-color: #ffffff;
     width: 20%;
-    height: 100%;
+    height: 90%;
     float: left;
     box-sizing: border-box;
 }
@@ -151,7 +154,7 @@ h3 {
 
 .boughtorno {
     width: 30%;
-    height: 100%;
+    height: 90%;
     float: right;
     display: inline-flex;
 }
@@ -249,7 +252,7 @@ h3 {
 .butbought {
     background-color: rgb(242, 242, 242);
     width: 90px;
-    height: 60%;
+    height: 70%;
     border-radius: 8%;
     margin-top: 8px;
     margin-left: -10px;
@@ -261,7 +264,7 @@ h3 {
 .butdelete {
     background-color: rgb(219, 40, 40);
     width: 35px;
-    height: 62%;
+    height: 70%;
     border-radius: 8%;
     margin-top: 8px;
     margin-left: 6px;
@@ -341,4 +344,85 @@ h3 {
 .itemwithcounts:last-child > .oval:last-child {
     width: 34%;
     margin-top: 3px;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+
+.beig {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(172, 0, 255);
+    position: absolute;
+    bottom: -8px;
+    left: 6%;
+    max-height: 40px;
+    transition:	all 0.7s ease;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.beig:hover {
+    background-color: rgb(90, 5, 255);
+    max-height: 100px;
+}
+
+.beig > .text {
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-left: 14px;
+}
+
+.beig > .text:nth-child(2) {
+    display: none;
+    font-family: Arial;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.beig > .text:last-child {
+    display: none;
+    font-family: Arial;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.beig:hover > .text:nth-child(2) {
+    display: block;
+}
+
+.beig:hover > .text:last-child {
+    display: block;
+}
+
+.footer > .beig:hover {
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    .container {
+        height: 450px;
+    }
+
+    .footer {
+        height: 110px;
+    }
+
+    .list {
+        width: 100%;
+        max-width: 750px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 }
