@@ -24,7 +24,6 @@ body {
 
 .info {
     width: 26%;
-    background-color: blue;
     margin-right: 4%;
     height: 180px;
 }
@@ -95,7 +94,7 @@ input::-webkit-input-placeholder {
 
 .input {
     width: 85%;
-    height: 89%;
+    height: 87%;
     float: left;
 }
 
@@ -183,11 +182,16 @@ h3 {
     height: 100%;
 }
 
+.minus {
+    position: relative;
+}
+
 .plus {
     background-color: #ffffff;
     float: right;
     width: 70px;
     height: 100%;
+    position: relative;
 }
 
 .oval {
@@ -259,6 +263,7 @@ h3 {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 0 0 darkgray;
+    position: relative;
 }
 
 .butdelete {
@@ -271,6 +276,7 @@ h3 {
     margin-right: 10px;
     text-align: center;
     box-shadow: 0 3px 0 0 rgb(199, 40, 40);
+    position: relative;
 }
 
 .butbought > .text {
@@ -348,7 +354,7 @@ h3 {
 
 .footer {
     width: 100%;
-    height: 200px;
+    height: 150px;
     position: relative;
 }
 
@@ -358,10 +364,10 @@ h3 {
     height: 100px;
     background-color: rgb(172, 0, 255);
     position: absolute;
-    bottom: -8px;
+    bottom: -20px;
     left: 6%;
     max-height: 40px;
-    transition:	all 0.7s ease;
+    transition:	all 0.75s ease;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -407,10 +413,11 @@ h3 {
 @media (max-width: 500px) {
     .container {
         height: 450px;
+        overflow-x: hidden;
     }
 
     .footer {
-        height: 110px;
+        height: 90px;
     }
 
     .list {
@@ -425,4 +432,126 @@ h3 {
         margin: auto;
         margin-bottom: 20px;
     }
+}
+
+.sumbit:after {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 80px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.sumbit:hover:after {
+    visibility: inherit;
+    opacity: 1;
+    width: 120px;
+    height: 20px;
+    top: -21px;
+    left: -10px;
+}
+
+.minus > .oval:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.minus > .oval:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 40px;
+    top: -35px;
+    left: 0px;
+}
+
+.plus > .oval:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.plus > .oval:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 40px;
+    top: -35px;
+    left: -10px;
+}
+
+.butbought:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.butbought:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 40px;
+    top: -42px;
+    left: 0px;
+}
+
+.butdelete:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -11px;
+    left: 2px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.butdelete:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 40px;
+    top: -41px;
+    left: -12px;
 }
