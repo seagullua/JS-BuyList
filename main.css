@@ -367,7 +367,7 @@ h3 {
     bottom: -20px;
     left: 6%;
     max-height: 40px;
-    transition:	all 0.75s ease;
+    transition:	all .75s ease;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -434,6 +434,26 @@ h3 {
     }
 }
 
+@media print {
+    .beig {
+        background-color: #ffffff;
+        border: 1px solid rgb(172, 0, 255);
+    }
+
+    .beig > .text {
+        display: none;
+    }
+
+    .beig > .text:nth-child(2) {
+        display: block;
+    }
+
+    .beig > .text:last-child {
+        font-size: 11px;
+        display: block;
+    }
+}
+
 .sumbit:after {
     content: attr(data-tooltip);
     background-color: rgb(201, 0, 255);
@@ -442,8 +462,8 @@ h3 {
     height: 0px;
     position: absolute;
     top: 0px;
-    left: 20px;
-    border-radius: 5px;
+    left: 10px;
+    border-radius: 10px;
     visibility: hidden;
     opacity: 0;
     transition: all .5s ease;
@@ -455,7 +475,7 @@ h3 {
     width: 120px;
     height: 20px;
     top: -21px;
-    left: -10px;
+    left: -20px;
 }
 
 .minus > .oval:before {
@@ -464,7 +484,7 @@ h3 {
     color: #ffffff;
     width: 50px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
     top: 0px;
     left: 5px;
@@ -488,7 +508,7 @@ h3 {
     color: #ffffff;
     width: 50px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
     top: 0px;
     left: 5px;
@@ -512,7 +532,7 @@ h3 {
     color: #ffffff;
     width: 50px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
     top: -12px;
     left: 10px;
@@ -537,10 +557,10 @@ h3 {
     color: #ffffff;
     width: 50px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
     top: -11px;
-    left: 2px;
+    left: -20px;
     z-index: 10;
     visibility: hidden;
     opacity: 0;
@@ -553,5 +573,5 @@ h3 {
     width: 80px;
     height: 40px;
     top: -41px;
-    left: -12px;
+    left: -40px;
 }
