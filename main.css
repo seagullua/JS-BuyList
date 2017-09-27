@@ -218,3 +218,46 @@ button.plus{
     font-weight: bold;
     font-size: 20pt;
 }
+
+.badge{
+    transition:	1s all ease;
+    padding-left: 10px;
+    width: 150px;
+    height: 100px;
+    background-color: rgba(225,27,255,0.54);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: fixed;
+    bottom: -50px;
+    left: 30px;
+}
+
+.badge:hover{
+    background-color: royalblue;
+    bottom: 0;
+}
+
+.badge .head{
+    font-size: 30pt;
+    font-weight: bolder;
+}
+
+.badge .created{
+    font-size: 10pt;
+}
+
+.badge .named{
+    font-size: 13pt;
+}
+
+@media print{
+    .badge .head{
+        display: none;
+    }
+    .badge{
+        background-color: white;
+        border: solid;
+        border-color: rgba(225,27,255,0.54);
+    }
+}
