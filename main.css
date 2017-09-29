@@ -14,6 +14,7 @@
 .container{
     box-sizing:	border-box;
     display: inline-block;
+    padding: 10px;
 }
 
 .white-block{
@@ -22,7 +23,7 @@
 }
 
 .items.white-block{
-    margin-right: 10px;
+
 }
 
 .left-column{
@@ -31,8 +32,9 @@
 }
 
 .chosen.white-block{
-    margin-left: 10px;
+
 }
+
 .right-column{
     width: 40%;
 }
@@ -42,7 +44,7 @@ body{
 
 .part{
     border: 1px;
-    padding: 5px;
+    padding: 10px;
     max-width: 100%;
     display:flex;
     border-top: 1px solid lightgray;
@@ -220,17 +222,17 @@ button.plus{
 }
 
 .badge{
-    transition:	1s all ease;
     padding-left: 10px;
     width: 150px;
     height: 100px;
-    background-color: rgba(225,27,255,0.54);
+    background-color: rgb(221, 0, 255);
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: fixed;
     bottom: -50px;
     left: 30px;
+    transition:	1s bottom ease,1s background-color ease;
 }
 
 .badge:hover{
@@ -259,5 +261,12 @@ button.plus{
         background-color: white;
         border: solid;
         border-color: rgba(225,27,255,0.54);
+        color: black;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 100%;
     }
 }
