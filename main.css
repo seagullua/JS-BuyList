@@ -1,5 +1,6 @@
 .ui{
     font-family: Calibri;
+    font-weight: bold;
 }
 .main-box{
     max-width: 1100px;
@@ -147,7 +148,6 @@ button.delete{
     margin: 1px;
     background-color: red;
     color: white;
-    font-weight: bolder;
     font-size: 12pt;
     box-shadow: 0 -3px 0 0 rgba(165, 0, 44, 0.51) inset;
 }
@@ -260,8 +260,9 @@ button.plus{
     .badge{
         background-color: white;
         border: solid;
-        border-color: rgba(225,27,255,0.54);
-        color: black;
+        border-color: rgb(0, 0, 0);
+        color: rgb(0,0,0);
+        height: 50px;
     }
 }
 
@@ -269,4 +270,43 @@ button.plus{
     .container{
         width: 100%;
     }
+}
+
+button {
+    position: relative;
+}
+.tooltip{
+    transition: opacity 1s, margin-top 1s, visibility 1s,height 1s;
+}
+/* Tooltip text */
+button .tooltip{
+    top:10px;
+    visibility: hidden;
+    width: 120px;
+    height: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: limegreen;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -35px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+button:hover .tooltip{
+    visibility: visible;
+    margin-top: -52px;
+    opacity: 1;
+    height: 1rem;
 }
