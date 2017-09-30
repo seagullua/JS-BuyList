@@ -107,14 +107,16 @@ input{
 
 .first{
     vertical-align: middle;
-    width: 33%;
+    width: 35%;
 }
 
 .second{
-    width: 33%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 30%;
 }
 .third{
-    width: 33%;
+    width: 35%;
 }
 
 .buttons-number-panel{
@@ -276,16 +278,16 @@ button {
     position: relative;
 }
 .tooltip{
-    transition: opacity 1s, margin-top 1s, visibility 1s,height 1s;
+    font-size: 10pt;
+    transition: opacity 1s ease, margin-top 1s ease, visibility 1s ease,height 1s ease;
 }
 /* Tooltip text */
 button .tooltip{
     top:10px;
     visibility: hidden;
-    width: 120px;
-    height: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    min-width: 120px;
+    height: 0px;
+    padding: 10px;
     background-color: limegreen;
     color: white;
     text-align: center;
@@ -296,8 +298,8 @@ button .tooltip{
     display: inline-block;
     z-index: 1;
     left: 50%;
-    margin-left: -60px;
-    margin-top: -35px;
+    margin-left: -70px;
+    margin-top: -30px;
 
     /* Fade in tooltip */
     opacity: 0;
@@ -306,7 +308,7 @@ button .tooltip{
 /* Show the tooltip text when you mouse over the tooltip container */
 button:hover .tooltip{
     visibility: visible;
-    margin-top: -52px;
+    margin-top: -50px;
     opacity: 1;
     height: 1rem;
 }
