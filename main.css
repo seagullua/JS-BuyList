@@ -277,12 +277,48 @@ button.plus{
 button {
     position: relative;
 }
+
+button.tooltip::before {
+    content: attr(data-tooltip) ;
+
+    position:absolute;
+    display: inline-block;
+    z-index: 999;
+    left: 50%;
+    padding:0px 7px;
+    height: 0px;
+    border-radius: 6px;
+    opacity: 0;
+    top: 20px;
+    min-width: 120px;
+    margin-left: -65px;
+    margin-top: -26px;
+
+    white-space:nowrap;
+    text-align: center;
+    line-height: 24px;
+    font-size: 2pt;
+    background-color: limegreen;
+    color:white;
+
+    transition:all 0.4s ease-out;
+}
+
+button.tooltip:hover::before {
+    font-size: 10pt;
+    height: 24px;
+    margin-top: -50px;
+    opacity: 1;
+}
+
+/*
 .tooltip{
     font-size: 10pt;
     transition: opacity 1s ease, margin-top 1s ease, visibility 1s ease,height 1s ease;
-}
-/* Tooltip text */
+
 button .tooltip{
+    content: attr(data-tooltip) ;
+
     top:10px;
     visibility: hidden;
     min-width: 120px;
@@ -293,7 +329,7 @@ button .tooltip{
     text-align: center;
     border-radius: 6px;
 
-    /* Position the tooltip text */
+
     position: absolute;
     display: inline-block;
     z-index: 1;
@@ -301,14 +337,14 @@ button .tooltip{
     margin-left: -70px;
     margin-top: -30px;
 
-    /* Fade in tooltip */
+
     opacity: 0;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+
 button:hover .tooltip{
     visibility: visible;
     margin-top: -50px;
     opacity: 1;
     height: 1rem;
-}
+}*/
