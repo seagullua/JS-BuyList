@@ -2,163 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buy List</title>
     <link href="main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <div class="list">
-        <div class="inputitem">
-            <div class="inputbutton">
-                <div class="input">
-                    <input type="text" placeholder="Назва товару">
-                </div>
-                <div class="sumbit" data-tooltip="Додати в список">
-                    <div class="text">Додати</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="name">
-                <div class="text">Помідори</div>
-            </div>
-            <div class="counts">
-                <div class="minus">
-                    <div class="oval" data-tooltip="Віднімає кількість">
-                        <div class="text">-</div>
+    <div class="listcontainer">
+        <div class="list">
+            <div class="inputitem">
+                <div class="inputbutton">
+                    <div class="inputcontainer">
+                        <input type="text" placeholder="Назва товару">
                     </div>
-                </div>
-                <div class="number">
-                    <div class="num">
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="plus">
-                    <div class="oval" data-tooltip="Додає кількість">
-                        <div class="text">+</div>
+                    <div class="sumbit" data-tooltip="Додати в список">
+                        <div class="text">Додати</div>
                     </div>
                 </div>
             </div>
-            <div class="boughtorno">
-                <div class="fortwobut">
-                    <div class="butbought" data-tooltip="Позначити купленим">
-                        <div class="text">Куплено</div>
+            <div class="item">
+                <div class="foritem">
+                    <div class="name">Помідори</div>
+                    <div class="counts">
+                        <div class="ovalmin" data-tooltip="Віднімає кількість">-</div>
+                        <div class="num">1</div>
+                        <div class="ovalpl" data-tooltip="Додає кількість">+</div>
                     </div>
-                    <div class="butdelete" data-tooltip="Видалити з списку">
-                        <div class="text">X</div>
-                    </div>
-                </div>
-                <div class="boughtno">
-
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="name">
-                <div class="text">Печиво</div>
-            </div>
-            <div class="counts">
-                <div class="minus">
-                    <div class="oval" data-tooltip="Віднімає кількість">
-                        <div class="text">-</div>
-                    </div>
-                </div>
-                <div class="number">
-                    <div class="num">
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="plus">
-                    <div class="oval" data-tooltip="Додає кількість">
-                        <div class="text">+</div>
+                    <div class="boughtorno">
+                        <div class="butdelete" data-tooltip="Видалити з списку">x</div>
+                        <div class="butbought" data-tooltip="Позначити купленим">Куплено</div>
+                        <div class="butboughtno" data-tooltip="Позначити не купленим">Не куплено</div>
                     </div>
                 </div>
             </div>
-            <div class="boughtorno">
-                <div class="fortwobut">
-                    <div class="butbought" data-tooltip="Позначити купленим">
-                        <div class="text">Куплено</div>
+            <div class="item">
+                <div class="foritem">
+                    <div class="name">Печево</div>
+                    <div class="counts">
+                        <div class="ovalmin" data-tooltip="Віднімає кількість">-</div>
+                        <div class="num">1</div>
+                        <div class="ovalpl" data-tooltip="Додає кількість">+</div>
                     </div>
-                    <div class="butdelete" data-tooltip="Видалити з списку">
-                        <div class="text">X</div>
-                    </div>
-                </div>
-                <div class="boughtno">
-
-                </div>
-            </div>
-        </div>
-        <div class="lastitem">
-            <div class="name">
-                <div class="text">Сир</div>
-            </div>
-            <div class="counts">
-                <div class="minus">
-                    <div class="oval" data-tooltip="Віднімає кількість">
-                        <div class="text">-</div>
-                    </div>
-                </div>
-                <div class="number">
-                    <div class="num">
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="plus">
-                    <div class="oval" data-tooltip="Додає кількість">
-                        <div class="text">+</div>
+                    <div class="boughtorno">
+                        <div class="butdelete" data-tooltip="Видалити з списку">x</div>
+                        <div class="butbought" data-tooltip="Позначити купленим">Куплено</div>
+                        <div class="butboughtno" data-tooltip="Позначити не купленим">Не куплено</div>
                     </div>
                 </div>
             </div>
-            <div class="boughtorno">
-                <div class="fortwobut">
-                    <div class="butbought" data-tooltip="Позначити купленим">
-                        <div class="text">Куплено</div>
+            <div class="item">
+                <div class="foritem">
+                    <div class="name">Сир</div>
+                    <div class="counts">
+                        <div class="ovalmin" data-tooltip="Віднімає кількість">-</div>
+                        <div class="num">1</div>
+                        <div class="ovalpl" data-tooltip="Додає кількість">+</div>
                     </div>
-                    <div class="butdelete" data-tooltip="Видалити з списку">
-                        <div class="text">X</div>
+                    <div class="boughtorno">
+                        <div class="butdelete" data-tooltip="Видалити з списку">x</div>
+                        <div class="butbought" data-tooltip="Позначити купленим">Куплено</div>
+                        <div class="butboughtno" data-tooltip="Позначити не купленим">Не куплено</div>
                     </div>
-                </div>
-                <div class="boughtno">
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="info">
-        <div class="remains">
-            <div class="forremains">
-                <h3>Залишилося</h3>
-            </div>
-        </div>
-        <div class="item">
-            <div class="remitems">
-                <div class="itemwithcounts">
-                    <div class="text">Помідори</div>
-                    <div class="oval">
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="itemwithcounts">
-                    <div class="text">Печево</div>
-                    <div class="oval">
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="itemwithcounts">
-                    <div class="text">Сир</div>
-                    <div class="oval">
-                        <div class="text">1</div>
-                    </div>
+    <div class="infocontainer">
+        <div class="info">
+            <div class="remains">
+                <div class="forremains">
+                   <h3>Залишилося</h3>
                 </div>
             </div>
-        </div>
-        <div class="bought">
-            <div class="forbought">
-                <h3>Куплено</h3>
+            <div class="item">
+                <div class="noboughtitems">
+                    <span class="curentitem">
+                        Помідори
+                        <div class="oval">1</div>
+                    </span>
+                    <span class="curentitem">
+                        Печево
+                        <div class="oval">1</div>
+                    </span>
+                    <span class="curentitem">
+                        Сир
+                        <div class="oval">1</div>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div class="lastitem">
+            <div class="bought">
+                <div class="forbought">
+                    <h3>Куплено</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="boughtitems">
 
+                </div>
+            </div>
         </div>
     </div>
 </div>
