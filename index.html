@@ -5,96 +5,83 @@
     
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
-<body>
+<body bgcolor="#dadada">
     <div class="main-container">
-<div class="leftcolumn">
-    <div class="iform">
-        <input type="text" placeholder="Назва товару">
-        <button class="add">Додати</button>
-        </div>
-    <div class="raws">
-  <div class="itemrow" data-class="edit-mode">
-      <div class="innergrid">
-            <span class="columnname">
-                <span class="bought">Помідори</span>
-                </span>
-                <span class="addbuttons">
-                      <button class="minus-button"disabled>-</button>
-                     <span class="count-label">1</span>
-            <button class="plus-button">+</button>    
-                </span>
-                  <span class="lastbuttons">
-            <button class="buybutton">Куплено</button>
-            <button class="deletebutton"title="Видалити"></button>
-            </span>  
-            </div>
-    </div>
-    </div>
-    <div class="itemrow" data-class="edit-mode">
-      <div class="innergrid">
-            <span class="columnname">
-                <span class="bought">Печиво</span>
-                </span>
-                <span class="addbuttons">
-                      <button class="minus-button"disabled>-</button>
-                     <span class="count-label">1</span>
-            <button class="plus-button">+</button>    
-                </span>
-                  <span class="lastbuttons">
-            <button class="buybutton">Куплено</button>
-            <button class="deletebutton"title="Видалити"></button>
-            </span>  
-            </div>
-    </div>
-       <div class="itemrow" data-class="edit-mode">
-      <div class="innergrid">
-            <div class="columnname">
-                <span class="bought">Сир</span>
+        <div class="leftcolumn">
+            <div class="addcontainer">
+                <div class="iform">
+   
+        <input id="field" type="text" placeholder="	Назва товару" class="productname" >
+																						  
+        <button id="butadd" class="add" data-tooltip="Add to Buy List">Додати</button>
                 </div>
-                <div class="addbuttons">
-                      <button class="minus-button"disabled>-</button>
-                     <span class="count-label">1</span>
-            <button class="plus-button">+</button>    
-                </div>
-                  <div class="lastbuttons">
-            <button class="buybutton">Куплено</button>
-            <button class="deletebutton"title="Видалити"></button>
-            </div>  
             </div>
-    </div>
-        </div>
-        </div>
-        
+     
+        <div class="itemrow">
+            <div class="innergrid">
+            <div class="bought" id="editor" >
+                Помідори
+            </div>
+            <div class="count">
+                <button class="minus-button" data-tooltip="Decrease">-</button>
+                <span class="label" id="count">1</span>
+                <button class="plus-button"  data-tooltip="Increase">+</button>
+            </div>
+            <div class="buttons">
+                <button class="buybutton" data-tooltip="Bought">Куплено</button>
+                <button class="deletebutton" data-tooltip="Delete">x</button>
+                </div>
+            </div>
+                    <div class="innergrid">
+            <div class="bought" id="editor" >
+             Печиво
+            </div>
+            <div class="count">
+                <button class="minus-button" data-tooltip="Decrease">-</button>
+                <span class="label" id="count">1</span>
+                <button class="plus-button"  data-tooltip="Increase">+</button>
+            </div>
+            <div class="buttons">
+                <button class="buybutton" data-tooltip="Bought">Куплено</button>
+                <button class="deletebutton" data-tooltip="Delete">x</button>
+                </div>
+            </div>
+            <div class="innergrid">
+                <div class="bought" id="editor" >
+                Сир
+            </div>
+            <div class="count">
+                <button class="minus-button" data-tooltip="Decrease">-</button>
+                <span class="label" id="count">1</span>
+                <button class="plus-button"  data-tooltip="Increase">+</button>
+            </div>
+            <div class="buttons">
+                <button class="buybutton" data-tooltip="Bought">Куплено</button>
+                <button class="deletebutton" data-tooltip="Delete">x</button>
+                </div>
+            </div>
+            </div>
+                </div>
         <div class="rightcolumn">
-        <div class="segments">
-            <div class="segment">
-            <h3>Залишилося</h3>
-            </div>
-            <div class="segment">
-            <div class="productsnotbought">
-                <span class="pr-label">
-                <span class="title">Помідори</span>
-                    <span class="mini-label-count">1</span>
-                </span>
-                <span class="pr-label">
-                <span class="title">Печиво</span>
-                <span class="mini-label-count">1</span>
-                </span>
-                <span class="pr-label">
-                <span class="title">Сир</span>
-                <span class="mini-label-count">1</span>
-                </span>
+            <div class="segments">
+                <div class="title"><h3>Залишилося</h3></div>
+                <div class="segment" >
+                    <div class="productsnotbought">
+                    <span class="label"><span class="titleitem">Помідори</span> <span class="num">1</span></span>
+                    <span class="label"><span class="titleitem">Печиво</span> <span class="num">1</span></span>
+                    <span class="label"><span class="titleitem">Сир</span> <span class="num">1</span></span>
+                        
                 </div>
-            </div>
-            <div class="segment">
-            <h3>Куплено</h3>
-            </div>
-            <div class="segment">
-            <div class="stats-bought">
                 </div>
-            </div>
+                <div class="titletwo"><h3>Куплене</h3></div>
+                <div class="segmenttwo"></div>
             </div>
         </div>
-
+    </div>
+   <div class="bage">
+        <h1>Buy List</h1>
+        <h3>Created by: </h3>
+        <h2>Vlada Didko</h2>
+    </div>
 </body>
 </html>
