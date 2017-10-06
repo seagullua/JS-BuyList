@@ -140,6 +140,18 @@ button.buy{
     box-shadow: 0 -3px 0 0 rgba(0,0,0,0.31) inset;
 }
 
+button.unbuy{
+    display: none;
+    height: 30px;
+    width: 80px;
+    border-width: 0;
+    border-radius: 5px;
+    margin: 1px;
+    vertical-align: middle;
+    background: linear-gradient(0deg, #e1e1e1, #f5f5f5) #ffffff;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.31) inset;
+}
+
 button.delete{
     height: 30px;
     width: 30px;
@@ -151,7 +163,7 @@ button.delete{
     background-color: red;
     color: white;
     font-size: 12pt;
-    box-shadow: 0 -3px 0 0 rgba(165, 0, 44, 0.51) inset;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.15) inset;
 }
 
 button.minus{
@@ -164,8 +176,13 @@ button.minus{
     background-color: red;
     border-width: 0;
     border-radius: 10em;
-    box-shadow: 0 -3px 0 0 rgba(165, 0, 44, 0.51) inset;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.15) inset;
     margin: 1px;
+}
+
+.minus:disabled{
+    background-color: #b1cda6;
+    box-shadow: none;
 }
 
 button.plus{
@@ -178,8 +195,13 @@ button.plus{
     background-color: limegreen;
     border-width: 0;
     border-radius: 10em;
-    box-shadow: 0 -3px 0 0 rgba(0, 147, 13, 0.77) inset;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.15) inset;
     margin: 1px;
+}
+
+.plus:disabled{
+    background-color: #cd9f9f;
+    box-shadow: none;
 }
 
 .number-label{
@@ -296,7 +318,7 @@ button.tooltip::before {
 
     white-space:nowrap;
     text-align: center;
-    line-height: 24px;
+    line-height: 0px;
     font-size: 2pt;
     background-color: limegreen;
     color:white;
@@ -309,42 +331,5 @@ button.tooltip:hover::before {
     height: 24px;
     margin-top: -50px;
     opacity: 1;
+    line-height: 24px;
 }
-
-/*
-.tooltip{
-    font-size: 10pt;
-    transition: opacity 1s ease, margin-top 1s ease, visibility 1s ease,height 1s ease;
-
-button .tooltip{
-    content: attr(data-tooltip) ;
-
-    top:10px;
-    visibility: hidden;
-    min-width: 120px;
-    height: 0px;
-    padding: 10px;
-    background-color: limegreen;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-
-
-    position: absolute;
-    display: inline-block;
-    z-index: 1;
-    left: 50%;
-    margin-left: -70px;
-    margin-top: -30px;
-
-
-    opacity: 0;
-}
-
-
-button:hover .tooltip{
-    visibility: visible;
-    margin-top: -50px;
-    opacity: 1;
-    height: 1rem;
-}*/
