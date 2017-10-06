@@ -1,3 +1,663 @@
-h1 {
-    color: red;
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #dadada;
+    height: 90%;
+}
+
+div {
+    display: block;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    min-height: 467px;
+    display: block;
+    overflow: auto;
+    padding-top: 90px;
+    margin-bottom: 52px;
+}
+
+.listcontainer, .infocontainer {
+    width: 58%;
+    float: left;
+    box-sizing: border-box;
+    padding: 14px;
+}
+
+.listcontainer {
+    margin-left: 8%;
+}
+
+.infocontainer {
+    width: 30%;
+    margin-right: 4%;
+}
+
+.list {
+    background-color: #ffffff;
+    padding: 6px 0;
+    width: 100%;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.inputitem {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.inputbutton {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 97.4%;
+    height: 100%;
+    display: inline-flex;
+}
+
+.inputcontainer {
+    width: 85%;
+    height: 80%;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    margin-left: 2px;
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+input:focus::placeholder {
+    opacity: 1;
+    color: black;
+}
+
+.sumbit {
+    background-color: rgb(33, 133, 208);
+    width: 108px;
+    height: 72.5%;
+    box-shadow: 0 3px 0 0 rgb(30, 120, 187);
+    z-index: 2;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    position: relative;
+}
+
+.sumbit:hover {
+    background-color: rgb(30, 124, 208);
+    cursor: pointer;
+}
+
+.sumbit:active {
+    background-color: rgb(30, 120, 187);
+}
+
+.sumbit:after {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 80%;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.sumbit:hover:after {
+    visibility: inherit;
+    opacity: 1;
+    width: 90%;
+    height: 35px;
+    top: -37px;
+    left: 5px;
+}
+
+.text {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.listitems {
+    display: none;
+}
+
+.item {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.foritem {
+    width: 100%;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+.name {
+    width: 34%;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial;
+    opacity: 0.7;
+    color: black;
+    display: inline-block;
+}
+
+.int {
+    width: 34%;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial;
+    opacity: 0.7;
+    color: black;
+    display: none;
+}
+
+input.additional {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
+.counts {
+    width: 80px;
+    margin-left: -1px;
+    padding-bottom: 23px;
+    display: inline-block;
+}
+
+.ovalmin {
+    background-color: rgb(239, 158, 158);
+    width: 24px;
+    margin-top: 6px;
+    border-radius: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+}
+
+.ovalmin:hover {
+    cursor: pointer;
+}
+
+.ovalmin:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: 10;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.ovalmin:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 36px;
+    top: -40px;
+    left: -28px;
+}
+
+.num {
+    background-color: rgb(232, 232, 232);
+    width: 20px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10%;
+    margin-left: 28.8px;
+    margin-top: 8px;
+    position: absolute;
+    color: #000000;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+}
+
+.ovalpl {
+    background-color: rgb(33, 186, 69);
+    width: 24px;
+    margin-top: 6px;
+    margin-left: 53px;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: 0 1px 0 0 rgb(33, 140, 50);
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ovalpl:hover {
+    background-color: rgb(33, 163, 54);
+    cursor: pointer;
+}
+
+.ovalpl:active {
+    background-color: rgb(33, 140, 50);
+}
+
+.ovalpl:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.ovalpl:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 36px;
+    top: -40px;
+    left: -25px;
+}
+
+.boughtorno {
+    width: 29%;
+    float: right;
+    display: inline-block;
+}
+
+.butbought {
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 0 darkgray;
+    float: right;
+    padding: 7px 16px;
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 10px;
+    font-family: Tahoma;
+    position: relative;
+    text-align: center;
+}
+
+.butbought:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.butbought:active {
+    background-color: darkgray;
+}
+
+.butbought:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -12px;
+    left: 5px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.butbought:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 90px;
+    height: 36px;
+    top: -40px;
+    left: -10px;
+}
+
+.butdelete {
+    background-color: rgb(227, 42, 49);
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    font-family: Calibri;
+    box-shadow: 0 2px 0 0 rgb(199, 40, 40);
+    margin-top: 6px;
+    margin-left: 5%;
+    color: #ffffff;
+    position: relative;
+}
+
+.butdelete:hover {
+    background-color: rgb(219, 40, 40);
+    cursor: pointer;
+}
+
+.butdelete:active {
+    background-color: rgb(199, 40, 40);
+}
+
+.butdelete:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -11px;
+    left: -20px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.butdelete:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 80px;
+    height: 36px;
+    top: -39px;
+    left: -35px;
+}
+
+.butboughtno {
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 0 darkgray;
+    float: right;
+    padding: 7px 16px;
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 10px;
+    font-family: Tahoma;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+.butboughtno:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.butboughtno:active {
+    background-color: darkgray;
+}
+
+.butboughtno:before {
+    content: attr(data-tooltip);
+    background-color: rgb(201, 0, 255);
+    color: #ffffff;
+    width: 75px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.butboughtno:hover:before {
+    visibility: inherit;
+    opacity: 1;
+    width: 105px;
+    height: 36px;
+    top: -40px;
+    left: -10px;
+}
+
+.info {
+    background-color: #ffffff;
+    padding-top: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.remains {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.forremains {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+    padding: 4px;
+}
+
+.info > .listitems {
+    margin-top: 2px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.info > .listitems:last-child {
+    border-bottom: none;
+}
+
+.noboughtitems {
+    padding: 7px 3px 2px 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.curentitem {
+    background-color: rgb(232, 232, 232);
+    display: inline-block;
+    height: 25px;
+    color: rgb(70, 70, 70);
+    padding: 2px 2px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.title {
+    display: inline-block;
+}
+
+.oval {
+    background-color: rgb(232, 94, 15);
+    width: 17px;
+    height: 15px;
+    border-radius: 100%;
+    display: inline-flex;
+    color: rgb(232, 232, 232);
+    font-size: 11px;
+    font-weight: 100;
+    font-family: Calibri;
+    padding-top: 1px;
+    padding-left: 6px;
+}
+
+.bought {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.forbought {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.boughtitems {
+    padding: 7px 3px 2px 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.boughtitems > .curentitem > .title {
+    text-decoration: line-through;
+}
+
+.boughtitems > .curentitem > .oval {
+    text-decoration: line-through;
+}
+
+.footer {
+    width: 99%;
+    position: relative;
+}
+
+.beig {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(172, 0, 255);
+    position: absolute;
+    bottom: -20px;
+    max-height: 40px;
+    text-align: center;
+    transition:	all .75s ease;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+}
+
+.beig:hover {
+    background-color: rgb(90, 5, 255);
+    max-height: 80px;
+}
+
+.beig > .text {
+    font-family: Arial;
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.beig > .text:nth-child(2) {
+    font-size: 11px;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: -10px;
+}
+
+.beig > .text:last-child {
+    font-size: 13px;
+    position: absolute;
+    top: 57px;
+    bottom: 0;
+    left: 0px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .listcontainer {
+        width: 100%;
+        margin: auto;
+    }
+
+    .infocontainer {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media print {
+    .beig {
+        background-color: #ffffff;
+        border: 1px solid rgb(172, 0, 255);
+    }
+
+    .beig > .text:first-child {
+        display: none;
+    }
+
+    .beig > .text:nth-child(2) {
+        top: 5px;
+        left: -20px;
+        color: #000000;
+    }
+
+    .beig > .text:last-child {
+        top: 20px;
+        color: #000000;
+    }
 }
