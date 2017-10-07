@@ -21,6 +21,7 @@
 .white-block{
     background: #fff;
     border-radius: 5px;
+    min-width: 300px;
 }
 
 .items.white-block{
@@ -45,9 +46,9 @@ body{
 
 .part{
     border: 1px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 100%;
-    display:flex;
     border-top: 1px solid lightgray;
 }
 
@@ -56,10 +57,18 @@ body{
 }
 
 .not-baught{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.baught{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .item{
+    padding-left: 0;
+    padding-right: 0;
     display:flex;
     border-top: 1px solid lightgray;
 }
@@ -75,7 +84,7 @@ body{
     display: flex;
 }
 
-input{
+.main-input{
     width: 100%;
     padding: 10px;
     border-width: 3px;
@@ -103,26 +112,23 @@ input{
 .column{
     margin: 10px;
     display: inline-block;
+    line-height: 100%;
 }
 
 .first{
     vertical-align: middle;
-    width: 35%;
+    width: 33%;
 }
 
 .second{
-    margin-left: 0;
-    margin-right: 0;
-    width: 30%;
+    width: 33%;
 }
 .third{
-    width: 35%;
+    width: 33%;
 }
 
 .buttons-number-panel{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80px;
+    text-align: center;
 }
 
 .buttons-buy-panel{
@@ -167,9 +173,10 @@ button.delete{
 }
 
 button.minus{
-    display: inline-block;
-    height: 25px;
-    width: 25px;
+    line-height: 100%;
+    display: inline;
+    height: 30px;
+    width: 30px;
     vertical-align: middle;
     font-weight: bolder;
     color: white;
@@ -181,14 +188,15 @@ button.minus{
 }
 
 .minus:disabled{
-    background-color: #b1cda6;
+    background-color: #cd9f9f;
     box-shadow: none;
 }
 
 button.plus{
-    display: inline-block;
-    height: 25px;
-    width: 25px;
+    line-height: 100%;
+    display: inline;
+    height: 30px;
+    width: 30px;
     vertical-align: middle;
     font-weight: bolder;
     color: white;
@@ -200,26 +208,29 @@ button.plus{
 }
 
 .plus:disabled{
-    background-color: #cd9f9f;
+    background-color: #b1cda6;
     box-shadow: none;
+
 }
 
 .number-label{
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 25px;
     vertical-align: middle;
     text-align: center;
     font-weight: bolder;
     background-color: lightgray;
     border-radius: 3px;
     margin: 1px;
+    white-space:nowrap;
+    line-height: 25px;
+    padding: 0 7px;
 }
 
 .label{
+    text-decoration: inherit;
     display: inline-block;
     vertical-align: middle;
-    text-align: center;
     background-color: lightgray;
     border-radius: 3px;
     margin: 1px;
@@ -332,4 +343,8 @@ button.tooltip:hover::before {
     margin-top: -50px;
     opacity: 1;
     line-height: 24px;
+}
+
+.edit{
+    display: none;
 }

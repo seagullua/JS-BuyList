@@ -13,7 +13,7 @@
             <div class="ui drop-shadow white-block">
                 <div class="ui part form top">
                     <div class="ui input">
-                        <input class="ui" type="text" placeholder="Назва товару">
+                        <input class="ui main-input" type="text" placeholder="Назва товару">
                         <button class="ui add-button tooltip" data-tooltip="ToolTip">
                              Додати
                         </button>
@@ -23,33 +23,30 @@
                     <div hidden="true" id="item_temp">
                         <div class="ui part item">
                             <div class="ui column first">
-                                Помідори
+                                <span id="item_name">Помідори</span>
+                                <input class="edit" type="text" placeholder="Нова назва">
                             </div>
-                            <div class="ui column second">
-                                <div class="ui buttons-panel">
-                                    <button class="ui minus tooltip" data-tooltip="ToolTip">
-                                        -
-                                    </button>
-                                    <div class="ui number-label">
-                                        1
-                                    </div>
-                                    <button class="ui plus tooltip" data-tooltip="ToolTip">
-                                        +
-                                    </button>
+                            <div class="ui column second buttons-number-panel">
+                                <button class="ui minus tooltip" data-tooltip="Зменшити кількість">
+                                    -
+                                </button>
+                                <div class="ui number-label">
+                                    1
                                 </div>
+                                <button class="ui plus tooltip" data-tooltip="Збільшити кількість">
+                                    +
+                                </button>
                             </div>
-                            <div class="ui column third">
-                                <div class="ui buttons-buy-panel">
-                                    <button class="ui buy tooltip" data-tooltip="ToolTip">
-                                        Куплено
-                                    </button>
-                                    <button class="ui delete tooltip" data-tooltip="ToolTip">
-                                        X
-                                    </button>
-                                    <button class="ui unbuy tooltip" data-tooltip="ToolTip">
-                                        Не куплено
-                                    </button>
-                                </div>
+                            <div class="ui column third buttons-buy-panel">
+                                <button class="ui buy tooltip" data-tooltip="Товар вже купили">
+                                    Куплено
+                                </button>
+                                <button class="ui delete tooltip" data-tooltip="Видалити товар">
+                                    X
+                                </button>
+                                <button class="ui unbuy tooltip" data-tooltip="Товар ще не куплено">
+                                    Не куплено
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -61,24 +58,14 @@
                 <div class="ui part heading top">
                     Залишилося
                 </div>
-                <div class="ui part">
-                    <div class="ui not-baught">
+                <div class="ui part not-baught">
+                    <div hidden="true" id="item_label_temp">
                         <div class="ui label">
-                            Помідори
+                            <span class="ui name-of-item">
+                                x3
+                            </span>
                             <div class="ui round-label">
-                                1
-                            </div>
-                        </div>
-                        <div class="ui label">
-                            Печиво
-                            <div class="ui round-label">
-                                1
-                            </div>
-                        </div>
-                        <div class="ui label">
-                            Сир
-                            <div class="ui round-label">
-                                1
+                                x3
                             </div>
                         </div>
                     </div>
@@ -86,8 +73,8 @@
                 <div class="ui part heading">
                     Куплено
                 </div>
-                <div class="ui part">
-
+                <div class="ui part baught" style="text-decoration: line-through">
+                    
                 </div>
             </div>
         </div>
