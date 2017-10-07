@@ -106,7 +106,7 @@ body{
     border-bottom-right-radius: 5px;
     color: white;
     background-color: dodgerblue;
-    box-shadow: 0 -5px 0 0 rgba(0, 62, 165, 0.51) inset;
+    box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
 
 .column{
@@ -295,9 +295,10 @@ button.plus{
     .badge{
         background-color: white;
         border: solid;
-        border-color: rgb(0, 0, 0);
+        border-color: rgb(225, 27, 255);
         color: rgb(0,0,0);
         height: 50px;
+        bottom: 0;
     }
 }
 
