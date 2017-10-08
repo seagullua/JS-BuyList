@@ -332,7 +332,7 @@ button.tooltip::before {
     text-align: center;
     line-height: 0px;
     font-size: 2pt;
-    background-color: limegreen;
+    background-color: rgb(225, 27, 255);
     color:white;
 
     transition:all 0.4s ease-out;
