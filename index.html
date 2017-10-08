@@ -2,13 +2,95 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <meta name="author" content="Vasylenko Olexandr">
+    <title>Buylist</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
+
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+    <div class="ui main-box">
+        <div class="ui container left-column">
+            <div class="ui drop-shadow white-block">
+                <div class="ui part form top">
+                    <div class="ui input">
+                        <input class="ui main-input" type="text" placeholder="Назва товару">
+                        <button class="ui add-button tooltip" data-tooltip="Додати до списку">
+                             Додати
+                        </button>
+                    </div>
+                </div>
+                <div class="ui list-of-items">
+                    <div hidden="true" id="item_temp">
+                        <div class="ui part item">
+                            <div class="ui column first">
+                                <span id="item_name">Помідори</span>
+                                <input class="edit" type="text" placeholder="Нова назва">
+                            </div>
+                            <div class="ui column second buttons-number-panel">
+                                <button class="ui minus tooltip" data-tooltip="Зменшити кількість">
+                                    -
+                                </button>
+                                <div class="ui number-label">
+                                    1
+                                </div>
+                                <button class="ui plus tooltip" data-tooltip="Збільшити кількість">
+                                    +
+                                </button>
+                            </div>
+                            <div class="ui column third buttons-buy-panel">
+                                <button class="ui buy tooltip" data-tooltip="Товар вже купили">
+                                    Куплено
+                                </button>
+                                <button class="ui delete tooltip" data-tooltip="Видалити товар">
+                                    X
+                                </button>
+                                <button class="ui unbuy tooltip" data-tooltip="Товар ще не куплено">
+                                    Не куплено
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui container right-column">
+            <div class="ui drop-shadow white-block chosen">
+                <div class="ui part heading top">
+                    Залишилося
+                </div>
+                <div class="ui part not-baught">
+                    <div hidden="true" id="item_label_temp">
+                        <div class="ui label">
+                            <span class="ui name-of-item">
+                                x3
+                            </span>
+                            <div class="ui round-label">
+                                x3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui part heading">
+                    Куплено
+                </div>
+                <div class="ui part baught" style="text-decoration: line-through">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui badge drop-shadow">
+        <div class="ui head">
+            BuyList
+        </div>
+        <div class="ui created">
+            Created by:
+        </div>
+        <div class="ui named">
+            Vasylenko Olexandr
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,351 @@
-h1 {
-    color: red;
+.ui{
+    font-family: Calibri;
+    font-weight: bold;
+}
+.main-box{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.drop-shadow{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+}
+
+.container{
+    box-sizing:	border-box;
+    display: inline-block;
+    padding: 10px;
+}
+
+.white-block{
+    background: #fff;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+.items.white-block{
+
+}
+
+.left-column{
+    float:	left;
+    width: 60%;
+}
+
+.chosen.white-block{
+
+}
+
+.right-column{
+    width: 40%;
+}
+body{
+    background-color: #e1e1e1;
+}
+
+.part{
+    border: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.top{
+    border-top: 0px;
+}
+
+.not-baught{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.baught{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item{
+    padding-left: 0;
+    padding-right: 0;
+    display:flex;
+    border-top: 1px solid lightgray;
+}
+
+.form{
+    padding: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+.input{
+    padding: 0px;
+    display: flex;
+}
+
+.main-input{
+    width: 100%;
+    padding: 10px;
+    border-width: 3px;
+    border: solid;
+    border-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.add-button{
+    float: right;
+    display: inline-block;
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: dodgerblue;
+    box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.column{
+    margin: 10px;
+    display: inline-block;
+    line-height: 100%;
+}
+
+.first{
+    vertical-align: middle;
+    width: 33%;
+}
+
+.second{
+    width: 33%;
+}
+.third{
+    width: 33%;
+}
+
+.buttons-number-panel{
+    text-align: center;
+}
+
+.buttons-buy-panel{
+    text-align: right;
+}
+
+button.buy{
+    height: 30px;
+    width: 80px;
+    border-width: 0;
+    border-radius: 5px;
+    margin: 1px;
+    vertical-align: middle;
+    background: linear-gradient(0deg, #e1e1e1, #f5f5f5) #ffffff;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.31) inset;
+}
+
+button.unbuy{
+    display: none;
+    height: 30px;
+    width: 80px;
+    border-width: 0;
+    border-radius: 5px;
+    margin: 1px;
+    vertical-align: middle;
+    background: linear-gradient(0deg, #e1e1e1, #f5f5f5) #ffffff;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.31) inset;
+}
+
+button.delete{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-width: 0;
+    border-radius: 3px;
+    margin: 1px;
+    background-color: red;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.15) inset;
+}
+
+button.minus{
+    line-height: 100%;
+    display: inline;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    border-width: 0;
+    border-radius: 10em;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.15) inset;
+    margin: 1px;
+}
+
+.minus:disabled{
+    background-color: #cd9f9f;
+    box-shadow: none;
+}
+
+button.plus{
+    line-height: 100%;
+    display: inline;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    font-weight: bolder;
+    color: white;
+    background-color: limegreen;
+    border-width: 0;
+    border-radius: 10em;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.15) inset;
+    margin: 1px;
+}
+
+.plus:disabled{
+    background-color: #b1cda6;
+    box-shadow: none;
+
+}
+
+.number-label{
+    display: inline-block;
+    height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 1px;
+    white-space:nowrap;
+    line-height: 25px;
+    padding: 0 7px;
+}
+
+.label{
+    text-decoration: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 1px;
+    padding: 5px;
+}
+
+.round-label{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    background-color: orange;
+    border-radius: 10em;
+    color: white;
+    margin: 1px;
+}
+
+.heading{
+    padding: 5%;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.badge{
+    padding-left: 10px;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(221, 0, 255);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: fixed;
+    bottom: -50px;
+    left: 30px;
+    transition:	1s bottom ease,1s background-color ease;
+}
+
+.badge:hover{
+    background-color: royalblue;
+    bottom: 0;
+}
+
+.badge .head{
+    font-size: 30pt;
+    font-weight: bolder;
+}
+
+.badge .created{
+    font-size: 10pt;
+}
+
+.badge .named{
+    font-size: 13pt;
+}
+
+@media print{
+    .badge .head{
+        display: none;
+    }
+    .badge{
+        background-color: white;
+        border: solid;
+        border-color: rgb(225, 27, 255);
+        color: rgb(0,0,0);
+        height: 50px;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 100%;
+    }
+}
+
+button {
+    position: relative;
+}
+
+button.tooltip::before {
+    content: attr(data-tooltip) ;
+
+    position:absolute;
+    display: inline-block;
+    z-index: 999;
+    left: 50%;
+    padding:0px 7px;
+    height: 0px;
+    border-radius: 6px;
+    opacity: 0;
+    top: 20px;
+    min-width: 120px;
+    margin-left: -65px;
+    margin-top: -26px;
+
+    white-space:nowrap;
+    text-align: center;
+    line-height: 0px;
+    font-size: 2pt;
+    background-color: rgb(225, 27, 255);
+    color:white;
+
+    transition:all 0.4s ease-out;
+}
+
+button.tooltip:hover::before {
+    font-size: 10pt;
+    height: 24px;
+    margin-top: -50px;
+    opacity: 1;
+    line-height: 24px;
+}
+
+.edit{
+    display: none;
 }
