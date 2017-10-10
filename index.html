@@ -1,14 +1,61 @@
-<!DOCTYPE html>
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <title>JS-BuyList</title>
+    
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script	type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+<body bgcolor="#dadada">
+    <div class="main-container">
+        <div class="leftcolumn">
+            <div class="addcontainer">
+                <div class="iform">
+   
+        <input id="field" type="text" placeholder="	Назва товару" class="productname" >
+																						  
+        <button id="butadd" class="add" data-tooltip="Add to Buy List">Додати</button>
+                </div>
+            </div>
+     
+        <div id="itemrow" class="itemrow">
+            <div class="innergrid">
+
+            <div class="bought" id="editor" >
+                Помідори
+            </div>
+            <div class="count">
+                <button class="minus-button" id="min" data-tooltip="Decrease">-</button>
+                <span class="label" id="count">1</span>
+                <button class="plus-button" id="plus" data-tooltip="Increase">+</button>
+            </div>
+
+            <div class="buttons">
+                <button class="buybutton" id="buybutton"data-tooltip="Bought">Куплено</button>
+                <button class="deletebutton" data-tooltip="Delete">x</button>
+                </div>
+            </div>
+                </div>
+        </div>
+  
+        <div class="rightcolumn">
+            <div class="segments">
+                <div class="title"><h3>Залишилося</h3></div>
+                <div class="segment" >
+                    <div class="notbought">
+                    <span class="label"><span class="titleitem">Помідори</span> <span class="num">1</span></span>         
+                </div>
+                </div>
+                <div class="titletwo"><h3>Куплене</h3></div>
+                <div class="segmenttwo"></div>
+            </div>
+        </div>
+    </div>
+   <div class="bage">
+        <h1>Buy List</h1>
+        <h3>Created by: </h3>
+        <h2>Vlada Didko</h2>
+    </div>
 </body>
 </html>
