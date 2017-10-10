@@ -4,6 +4,8 @@
     <title>JS-BuyList</title>
     
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script	type="text/javascript" src="js/main.js"></script>
 </head>
 <body bgcolor="#dadada">
     <div class="main-container">
@@ -17,60 +19,32 @@
                 </div>
             </div>
      
-        <div class="itemrow">
+        <div id="itemrow" class="itemrow">
             <div class="innergrid">
+
             <div class="bought" id="editor" >
                 Помідори
             </div>
             <div class="count">
-                <button class="minus-button" data-tooltip="Decrease">-</button>
+                <button class="minus-button" id="min" data-tooltip="Decrease">-</button>
                 <span class="label" id="count">1</span>
-                <button class="plus-button"  data-tooltip="Increase">+</button>
+                <button class="plus-button" id="plus" data-tooltip="Increase">+</button>
             </div>
+
             <div class="buttons">
-                <button class="buybutton" data-tooltip="Bought">Куплено</button>
+                <button class="buybutton" id="buybutton"data-tooltip="Bought">Куплено</button>
                 <button class="deletebutton" data-tooltip="Delete">x</button>
                 </div>
             </div>
-                    <div class="innergrid">
-            <div class="bought" id="editor" >
-             Печиво
-            </div>
-            <div class="count">
-                <button class="minus-button" data-tooltip="Decrease">-</button>
-                <span class="label" id="count">1</span>
-                <button class="plus-button"  data-tooltip="Increase">+</button>
-            </div>
-            <div class="buttons">
-                <button class="buybutton" data-tooltip="Bought">Куплено</button>
-                <button class="deletebutton" data-tooltip="Delete">x</button>
                 </div>
-            </div>
-            <div class="innergrid">
-                <div class="bought" id="editor" >
-                Сир
-            </div>
-            <div class="count">
-                <button class="minus-button" data-tooltip="Decrease">-</button>
-                <span class="label" id="count">1</span>
-                <button class="plus-button"  data-tooltip="Increase">+</button>
-            </div>
-            <div class="buttons">
-                <button class="buybutton" data-tooltip="Bought">Куплено</button>
-                <button class="deletebutton" data-tooltip="Delete">x</button>
-                </div>
-            </div>
-            </div>
-                </div>
+        </div>
+  
         <div class="rightcolumn">
             <div class="segments">
                 <div class="title"><h3>Залишилося</h3></div>
                 <div class="segment" >
-                    <div class="productsnotbought">
-                    <span class="label"><span class="titleitem">Помідори</span> <span class="num">1</span></span>
-                    <span class="label"><span class="titleitem">Печиво</span> <span class="num">1</span></span>
-                    <span class="label"><span class="titleitem">Сир</span> <span class="num">1</span></span>
-                        
+                    <div class="notbought">
+                    <span class="label"><span class="titleitem">Помідори</span> <span class="num">1</span></span>         
                 </div>
                 </div>
                 <div class="titletwo"><h3>Куплене</h3></div>
