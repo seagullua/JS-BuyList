@@ -121,12 +121,16 @@ h1, h2, h3, h4{
     text-align: center;
     font-size: 16px;
     border-radius: 500rem;
-    background-color: #DB2828;
+    background-color: #a62804;
     color: #FFF;
     box-shadow: 0 -.3em 0 0 rgba(34,36,38,.15) inset;
     border: none;
     font-weight: 700;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+.minus-button:hover{
+   background-color: #DB2828;
+
 }
 
 .buybutton{
@@ -174,6 +178,9 @@ h1, h2, h3, h4{
     border: none;
     font-weight: 700;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+.plus-button:hover{
+    background-color: #57a612;
 }
 .label{
     display: inline-block;
@@ -225,7 +232,8 @@ h1, h2, h3, h4{
     height: 270px;
     float: left;
     -webkit-transition: transform 0.7s ease-in-out;
-    transform: translateY(-160px);
+    /*transform: translateY(-160px);*/
+    transform: rotate(360deg);
     
 }
 
@@ -292,7 +300,7 @@ button:hover::after {
     background: white;
 }   
 }
-@media screen (max-width:800px){
+@media (max-width:800px){
  	.leftcolumn {
     border-radius: .2rem .2rem 0 0;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
